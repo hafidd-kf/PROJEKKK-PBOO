@@ -10,9 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="MonitoringAyam\" />
     <Folder Include="MonitoringTelur\" />
+    <Folder Include="Services\" />
     <Folder Include="PrediksiTelur\" />
     <Folder Include="PrediksiAyam\" />
   </ItemGroup>
