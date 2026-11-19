@@ -39,6 +39,7 @@
             picLogo = new PictureBox();
             panelLogin = new Panel();
             chkLihatPassword = new CheckBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             panelLogin.SuspendLayout();
             SuspendLayout();
@@ -46,19 +47,19 @@
             // judul
             // 
             judul.AutoSize = true;
-            judul.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            judul.Location = new Point(366, 149);
+            judul.Font = new Font("Arial", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            judul.Location = new Point(262, 41);
             judul.Name = "judul";
-            judul.Size = new Size(95, 35);
+            judul.Size = new Size(141, 27);
             judul.TabIndex = 0;
-            judul.Text = "Login";
+            judul.Text = "Login Akun";
             // 
             // lblUsername
             // 
             lblUsername.AutoSize = true;
-            lblUsername.BackColor = Color.Gainsboro;
+            lblUsername.BackColor = Color.White;
             lblUsername.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblUsername.Location = new Point(252, 210);
+            lblUsername.Location = new Point(162, 112);
             lblUsername.Name = "lblUsername";
             lblUsername.Size = new Size(105, 24);
             lblUsername.TabIndex = 1;
@@ -66,7 +67,7 @@
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(252, 247);
+            txtUsername.Location = new Point(162, 150);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(310, 27);
             txtUsername.TabIndex = 2;
@@ -75,9 +76,9 @@
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.BackColor = Color.Gainsboro;
+            lblPassword.BackColor = Color.White;
             lblPassword.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPassword.Location = new Point(254, 325);
+            lblPassword.Location = new Point(162, 190);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(103, 24);
             lblPassword.TabIndex = 3;
@@ -85,7 +86,7 @@
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(252, 362);
+            txtPassword.Location = new Point(162, 217);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(310, 27);
             txtPassword.TabIndex = 4;
@@ -93,7 +94,7 @@
             // btnLogin
             // 
             btnLogin.BackColor = Color.Lime;
-            btnLogin.Location = new Point(162, 250);
+            btnLogin.Location = new Point(162, 291);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(310, 31);
             btnLogin.TabIndex = 5;
@@ -105,7 +106,7 @@
             picLogo.BackColor = Color.Transparent;
             picLogo.BackgroundImage = (Image)resources.GetObject("picLogo.BackgroundImage");
             picLogo.BackgroundImageLayout = ImageLayout.Stretch;
-            picLogo.Location = new Point(357, 36);
+            picLogo.Location = new Point(374, 12);
             picLogo.Name = "picLogo";
             picLogo.Size = new Size(140, 87);
             picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -114,36 +115,48 @@
             // 
             // panelLogin
             // 
-            panelLogin.BackColor = Color.Gainsboro;
+            panelLogin.BackColor = Color.White;
             panelLogin.Controls.Add(chkLihatPassword);
             panelLogin.Controls.Add(btnLogin);
-            panelLogin.Location = new Point(90, 187);
+            panelLogin.Controls.Add(judul);
+            panelLogin.Controls.Add(lblPassword);
+            panelLogin.Controls.Add(txtPassword);
+            panelLogin.Controls.Add(txtUsername);
+            panelLogin.Controls.Add(lblUsername);
+            panelLogin.Location = new Point(90, 201);
             panelLogin.Name = "panelLogin";
-            panelLogin.Size = new Size(677, 384);
+            panelLogin.Size = new Size(677, 335);
             panelLogin.TabIndex = 7;
             // 
             // chkLihatPassword
             // 
             chkLihatPassword.AutoSize = true;
-            chkLihatPassword.Location = new Point(162, 208);
+            chkLihatPassword.Location = new Point(162, 250);
             chkLihatPassword.Name = "chkLihatPassword";
             chkLihatPassword.Size = new Size(128, 24);
             chkLihatPassword.TabIndex = 0;
             chkLihatPassword.Text = "Lihat Password";
             chkLihatPassword.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(241, 138);
+            label1.Name = "label1";
+            label1.Size = new Size(423, 48);
+            label1.TabIndex = 8;
+            label1.Text = "Sistem Monitoring dan Prediksi Persentase \r\n\r\n";
+            label1.Click += label1_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.OldLace;
             ClientSize = new Size(882, 609);
+            Controls.Add(label1);
             Controls.Add(picLogo);
-            Controls.Add(txtPassword);
-            Controls.Add(lblPassword);
-            Controls.Add(txtUsername);
-            Controls.Add(lblUsername);
-            Controls.Add(judul);
             Controls.Add(panelLogin);
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
@@ -167,5 +180,6 @@
         private PictureBox picLogo;
         private Panel panelLogin;
         private CheckBox chkLihatPassword;
+        private Label label1;
     }
 }

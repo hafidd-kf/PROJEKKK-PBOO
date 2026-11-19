@@ -1,8 +1,6 @@
-﻿
-using System;
+﻿using System;
 using System.Windows.Forms;
 using PROJEKKKK_PBOO.Controller;
-
 namespace PROJEKKKK_PBOO.View
 {
     public partial class Login : Form
@@ -72,6 +70,11 @@ namespace PROJEKKKK_PBOO.View
         // Event bawaan Designer
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
