@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Prediksi_hasilpanen
+namespace PROJEKKKK_PBOO.Models
 {
     // Data panen untuk satu hari
     public class DataPanen

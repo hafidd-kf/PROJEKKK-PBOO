@@ -1,7 +1,8 @@
-﻿using System;
+﻿using PROJEKKKK_PBOO.Models;
+using System;
 using System.Collections.Generic;
 
-namespace Prediksi_hasilpanen
+namespace PROJEKKKK_PBOO.Services
 {
     // Prediksi sederhana:
     // 1. Produktivitas harian = telur / ayam produktif.

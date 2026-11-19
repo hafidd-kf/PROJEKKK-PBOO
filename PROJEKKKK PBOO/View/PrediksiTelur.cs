@@ -1,4 +1,5 @@
-﻿using Prediksi_hasilpanen;
+﻿using PROJEKKKK_PBOO.Models;
+using PROJEKKKK_PBOO.Services;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -6,12 +7,12 @@ using System.Windows.Forms;
 
 namespace PROJEKKKK_PBOO.Prediksi_Telur
 {
-    public partial class Form1 : Form
+    public partial class PrediksiTelur : Form
     {
         private List<DataPanen> data = new List<DataPanen>();
         private PrediksiService service = new PrediksiService();
 
-        public Form1()
+        public PrediksiTelur()
         {
             InitializeComponent();
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PROJEKKKK_PBOO.Services
+namespace PROJEKKKK_PBOO.Models
 {
     public class HasilPrediksi
     {

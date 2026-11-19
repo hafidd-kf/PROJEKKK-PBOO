@@ -38,7 +38,7 @@ namespace PROJEKKKK_PBOO
 
         private void btnPrediksiTelur_Click(object sender, EventArgs e)
         {
-            new PROJEKKKK_PBOO.Prediksi_Telur.Form1().Show();
+            new PROJEKKKK_PBOO.Prediksi_Telur.PrediksiTelur().Show();
         }
     }
 
