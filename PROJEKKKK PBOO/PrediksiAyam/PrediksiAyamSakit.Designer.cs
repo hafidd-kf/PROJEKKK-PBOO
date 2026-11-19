@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrediksiAyamSakit));
             txtTanggal = new TextBox();
             txtJumlahAyam = new TextBox();
             txtAyamSakit = new TextBox();
@@ -38,7 +39,9 @@
             btnSimpan = new Button();
             btnReset = new Button();
             btnHapus = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dgvHasil).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtTanggal
@@ -47,7 +50,6 @@
             txtTanggal.Name = "txtTanggal";
             txtTanggal.Size = new Size(197, 27);
             txtTanggal.TabIndex = 0;
-            //txtTanggal.TextChanged += textBox1_TextChanged;
             // 
             // txtJumlahAyam
             // 
@@ -55,7 +57,6 @@
             txtJumlahAyam.Name = "txtJumlahAyam";
             txtJumlahAyam.Size = new Size(197, 27);
             txtJumlahAyam.TabIndex = 1;
-            //txtJumlahAyam.TextChanged += textBox2_TextChanged;
             // 
             // txtAyamSakit
             // 
@@ -134,12 +135,24 @@
             btnHapus.Text = "Hapus";
             btnHapus.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(598, 32);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(320, 244);
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // PrediksiAyamSakit
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1033, 592);
+            Controls.Add(pictureBox1);
             Controls.Add(btnHapus);
             Controls.Add(btnReset);
             Controls.Add(btnSimpan);
@@ -153,6 +166,7 @@
             Name = "PrediksiAyamSakit";
             Text = "PrediksiAyamSakit";
             ((System.ComponentModel.ISupportInitialize)dgvHasil).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -169,5 +183,6 @@
         private Button btnSimpan;
         private Button btnReset;
         private Button btnHapus;
+        private PictureBox pictureBox1;
     }
 }

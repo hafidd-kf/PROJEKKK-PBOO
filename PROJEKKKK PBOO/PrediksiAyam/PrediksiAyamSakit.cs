@@ -11,7 +11,6 @@ namespace PROJEKKKK_PBOO.PrediksiAyam
         {
             InitializeComponent();
             AturTabel();
-
             // Menghubungkan tombol
             btnSimpan.Click += btnSimpan_Click;
             btnReset.Click += btnReset_Click;
@@ -152,6 +151,11 @@ namespace PROJEKKKK_PBOO.PrediksiAyam
             }
 
             MessageBox.Show("Data berhasil dihapus!");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
