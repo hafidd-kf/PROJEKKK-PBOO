@@ -11,7 +11,7 @@ namespace PROJEKKKK_PBOO
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new PROJEKKKK_PBOO.PrediksiAyam.PrediksiAyamSakit());
+            Application.Run(new PROJEKKKK_PBOO.Prediksi_Telur.Form1());
         }
     }
 }
