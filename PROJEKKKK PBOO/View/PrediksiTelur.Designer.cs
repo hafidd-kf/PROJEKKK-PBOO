@@ -184,6 +184,7 @@
             pictureBox1.Size = new Size(294, 196);
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // PrediksiTelur
             // 

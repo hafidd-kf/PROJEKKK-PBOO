@@ -131,5 +131,10 @@ namespace PROJEKKKK_PBOO.Prediksi_Telur
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
