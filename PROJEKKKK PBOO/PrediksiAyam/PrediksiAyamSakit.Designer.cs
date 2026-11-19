@@ -50,6 +50,7 @@
             txtTanggal.Name = "txtTanggal";
             txtTanggal.Size = new Size(197, 27);
             txtTanggal.TabIndex = 0;
+            txtTanggal.TextChanged += txtTanggal_TextChanged;
             // 
             // txtJumlahAyam
             // 

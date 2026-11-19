@@ -1,23 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PROJEKKKK_PBOO.Models
 {
+    // Inharitance 
     public class PrediksiAyamModel : Prediksi
     {
         public PrediksiAyamModel(int jumlahAyam, int ayamSakit)
             : base(jumlahAyam, ayamSakit) { }
 
-        public string Status(double sebelumnya, double sekarang)
+        // Override
+        public override double HitungPersentase()
         {
-            if (sekarang > sebelumnya)
-                return "Meningkat";
+            return Math.Round(base.HitungPersentase(), 2);
+        }
 
-            if (sekarang < sebelumnya)
-                return "Menurun";
-
+        // OVERRIDE: istilah status khusus ayam
+        public  string TentukanStatus(double sebelumnya, double sekarang)
+        {
+            if (sekarang > sebelumnya) return "Meningkat";
+            if (sekarang < sebelumnya) return "Menurun";
             return "Stabil";
         }
     }
 }
+

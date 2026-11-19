@@ -1,24 +1,43 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PROJEKKKK_PBOO.Models
 {
     public class Prediksi
     {
-        public int JumlahAyam { get; private set; }
-        public int AyamSakit { get; private set; }
+        private int jumlahAyam;
+        private int ayamSakit;
 
+        public int JumlahAyam
+        {
+            get { return jumlahAyam; }
+            private set
+            {
+                if (value <= 0)
+                    throw new ArgumentException("Jumlah ayam harus lebih dari 0");
+                jumlahAyam = value;
+            }
+        }
+        public int AyamSakit
+        {
+            get { return ayamSakit; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentException("Ayam sakit tidak boleh negatif");
+                ayamSakit = value;
+            }
+        }
         public Prediksi(int jumlahAyam, int ayamSakit)
         {
             JumlahAyam = jumlahAyam;
             AyamSakit = ayamSakit;
-        }
 
+            if (ayamSakit > jumlahAyam)
+                throw new ArgumentException("Ayam sakit tidak boleh melebihi jumlah ayam");
+        }
         public virtual double HitungPersentase()
         {
             return (double)AyamSakit / JumlahAyam * 100;
         }
     }
 }
-
