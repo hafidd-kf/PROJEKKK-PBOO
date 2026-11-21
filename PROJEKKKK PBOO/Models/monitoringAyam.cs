@@ -1,4 +1,4 @@
-﻿namespace MonitoringKesehatanAyam;
+﻿namespace PROJEKKKK_PBOO.Models;
 
 public class MonitoringAyam
 {
@@ -9,4 +9,3 @@ public class MonitoringAyam
     public string Gejala { get; set; }
     public string Tindakan { get; set; }
 }
-//apa aja deh

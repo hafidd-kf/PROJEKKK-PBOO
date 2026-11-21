@@ -1,5 +1,4 @@
-﻿
-namespace PROJEKKKK_PBOO.Models
+﻿namespace PROJEKKKK_PBOO.Models
 {
     public class AkunModel
     {

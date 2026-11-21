@@ -1,5 +1,4 @@
-﻿
-using PROJEKKKK_PBOO.Models;
+﻿using PROJEKKKK_PBOO.Models;
 using System;
 
 namespace PROJEKKKK_PBOO.Controller

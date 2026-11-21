@@ -1,5 +1,4 @@
-﻿
-namespace PROJEKKKK_PBOO.Controller
+﻿namespace PROJEKKKK_PBOO.Controller
 {
     public class LoginController
     {
